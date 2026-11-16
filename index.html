@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sr" data-tenant="giardino">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Poruči domaću pastu, rižoto, picu ili burger iz Giardina, na krovu TC Bazar u Novom Sadu. Dostava i preuzimanje." />
+    <meta name="theme-color" content="#0E0D0A" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Giardino" />
+    <link rel="icon" href="/giardino-club/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/giardino-club/apple-touch-icon.png" />
+    <title>Caffe Club Giardino · Dostava hrane, Novi Sad</title>
+    <style>
+      /* Splash painted before the JS bundle arrives (slow networks): brand colour + name, replaced by React. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: var(--color-cream-100, #fff); }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-forest-800, #222); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="giardino"] {
+  --color-cream-50: #1B1A16;
+  --color-cream-100: #0E0D0A;
+  --color-cream-200: #16150F;
+  --color-cream-300: #34322A;
+  --color-cream-400: #55524A;
+  --color-azure-100: #2A2318;
+  --color-azure-200: #B88A58;
+  --color-azure-300: #C59764;
+  --color-azure-400: #D4AB7E;
+  --color-on-primary: #17120B;
+  --color-forest-950: #FFFFFF;
+  --color-forest-900: #F3EEE6;
+  --color-forest-800: #FAF6EF;
+  --color-forest-700: #E6DFD3;
+  --color-forest-600: #C4BBAE;
+  --color-forest-500: #9E9688;
+  --color-forest-400: #857D70;
+  --color-flame-100: #1D2612;
+  --color-flame-200: #33461A;
+  --color-flame-500: #4F7A1A;
+  --color-flame-600: #8DB44A;
+  --color-flame-700: #B3D07A;
+  --color-tomato-500: #EF6A5B;
+  --color-tomato-100: #3A1C17;
+  --color-basil-500: #8DB474;
+  --color-basil-100: #1E2A17;
+  --color-notice-500: #E8B64A;
+  --color-notice-100: #3A2D10;
+  --color-ink: #F1ECE3;
+  --color-ink-2: #C4BBAE;
+  --color-ink-3: #8F877A;
+  --font-display: "Jost", "Futura", "Helvetica Neue", Arial, sans-serif;
+  --display-scale: 0.8;
+  --display-tracking: 0.06em;
+  --display-case: uppercase;
+  --display-weight: 500;
+  --motif: repeating-linear-gradient(90deg, #17220E 0px, #2B3D17 9px, #17220E 18px, #0B0C08 18px, #0B0C08 20px);
+  --glass-bg: rgba(14, 13, 10, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /giardino-club/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/giardino-club/fonts/jost-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/giardino-club/fonts/jost-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    <link rel="preload" as="image" href="/giardino-club/pizzas/pasta-carbonara.webp" />
+    <link rel="preload" as="image" href="/giardino-club/logo.png" />
+    <script type="module" crossorigin src="/giardino-club/assets/main-B6UPUGiK.js"></script>
+    <link rel="stylesheet" crossorigin href="/giardino-club/assets/main-0Woaj26n.css">
+  <link rel="manifest" href="/giardino-club/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/giardino-club/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">Giardino</span><span class="splash-sub">Učitavanje</span></div></div>
+  </body>
+</html>

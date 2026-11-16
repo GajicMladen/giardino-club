@@ -1,0 +1,26 @@
+{
+  "id": "/giardino-club/kuhinja",
+  "name": "Giardino · Kuhinja",
+  "short_name": "Kuhinja",
+  "description": "Portal za kuhinju — Caffe Club Giardino",
+  "lang": "sr",
+  "start_url": "/giardino-club/kuhinja",
+  "scope": "/giardino-club/kuhinja",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0E0D0A",
+  "background_color": "#0E0D0A",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

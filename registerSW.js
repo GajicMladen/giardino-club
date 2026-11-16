@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/giardino-club/sw.js', { scope: '/giardino-club/' })})}
